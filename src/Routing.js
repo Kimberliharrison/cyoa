@@ -13,7 +13,7 @@ export default () => {
   return (
     <Router>
       <Switch>
-        <Route path="/" exact component={User} />
+        <Route path="/" exact component={Login} />
         <Route path="/Character" exact component={Character} />
         <Route path="/Library" exact component={Library} />
         <Route path="/Storyend" exact component={Storyend} />
