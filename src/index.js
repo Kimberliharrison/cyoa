@@ -7,7 +7,7 @@ import { ApolloClient, ApolloProvider, createNetworkInterface } from 'react-apol
 
 const client = new ApolloClient({
   networkInterface: createNetworkInterface({
-    uri: 'https://api.graph.cool/simple/v1/cj5sky7mx89yw01604smhh7ki',
+    uri: 'https://api.graph.cool/simple/v1/cj5vepfbv4ndd0122laj4sgu1',
   }),
 });
 
