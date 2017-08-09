@@ -6,11 +6,13 @@ class Theme extends Component {
     return (
       <main>
         <div>
-          <h2>Hello London!</h2>
-          <h3>Pick your story and music.</h3>
-          <a href="/Storyend">
-            <i className="material-icons">videocam</i>
-          </a>
+          <div>
+            <h2>Hello London!</h2>
+            <h3>Pick your story and music.</h3>
+            <a href="/Storyend">
+              <i className="material-icons">videocam</i>
+            </a>
+          </div>
         </div>
       </main>
     );

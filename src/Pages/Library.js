@@ -12,7 +12,7 @@ class Library extends Component {
             <i className="material-icons">grade</i>
           </a>
         </div>
-        <div className="movies">
+        <div>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/IDbLzCPd2MY" frameborder="0" allowfullscreen></iframe>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/hZ1Rb9hC4JY?list=PLdSMQMuTYK4A2e67n5JcmjQQODoRK4S-6" frameborder="0" allowfullscreen></iframe>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/afzmwAKUppU" frameborder="0" allowfullscreen></iframe>
