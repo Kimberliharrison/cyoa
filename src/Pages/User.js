@@ -1,23 +1,38 @@
 import React, { Component } from 'react';
+import '../App.css';
+import '../index.css';
+
+// const styles = {
+//   pageBackground: {
+//     background: `saddlebrown url('/Images/Backgrounds/1118086.jpg') no-repeat top center/100%`,
+//     minHeight: '400px',
+//     height: '100vh'
+//     // width: '100vw'
+//   }
+// };
 
 class User extends Component {
 
   render() {
     return (
-      <main>
-        <div>
-          <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAJIAAAAJDRmMjdkMDZhLTc2ZGUtNGQyMS1hYzhjLTRkY2ZkOGMzOGI1ZA.jpg" class="profile-photo-edit__preview" alt="Edit photo" height="128" width="128" />
-          {/*<a href="images/fulls/family.jpg" className="user-image"><img src="images/thumbs/family.jpg" alt="" /></a>*/}
-          <h2>Hello London!</h2>
-          <h4>This is your homepage.</h4>
-        </div>
-        <a href="/Character">
-          <i className="material-icons">face</i>
-        </a>
-        <a href="/Library">
-          <i className="material-icons">movie</i>
-        </a>
-      </main>
+      <article className="user-background">
+        <section className="user-content">
+          <div >
+            <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAJIAAAAJDRmMjdkMDZhLTc2ZGUtNGQyMS1hYzhjLTRkY2ZkOGMzOGI1ZA.jpg"
+              className="profile-photo"
+              alt="Edit photo"
+              height="200"
+              width="200" />
+            <h2>Hello London!</h2>
+          </div>
+          <a href="/Character" className="icon">
+            <i className="material-icons">face</i>
+          </a>
+          <a href="/Library" className="icon">
+            <i className="material-icons">movie</i>
+          </a>
+        </section>
+      </article>
     );
   }
 }

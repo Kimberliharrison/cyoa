@@ -4,17 +4,19 @@ class Theme extends Component {
 
   render() {
     return (
-      <main>
-        <div>
+      <article className="user-background">
+        <section className="page-content">
           <div>
-            <h2>Hello London!</h2>
-            <h3>Pick your story and music.</h3>
-            <a href="/Storyend">
-              <i className="material-icons">videocam</i>
-            </a>
+            <div>
+              <h2>Hello London!</h2>
+              <h3>Pick your story and music.</h3>
+              <a href="/Storyend">
+                <i className="material-icons">videocam</i>
+              </a>
+            </div>
           </div>
-        </div>
-      </main>
+        </section>
+      </article>
     );
   }
 }

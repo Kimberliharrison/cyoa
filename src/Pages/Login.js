@@ -4,8 +4,11 @@ class Login extends Component {
 
   render() {
     return (
-      <main>
-      </main>
+      <article className="user-background">
+        <section className="user-content">
+
+        </section>
+      </article>
     );
   }
 }
