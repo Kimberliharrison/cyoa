@@ -4,7 +4,7 @@ class Library extends Component {
 
   render() {
     return (
-      <article className="user-background">
+      <article className="library-background">
         <section className="page-content">
           <div>
             <h2>Hello London!</h2>

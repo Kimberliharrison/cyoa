@@ -5,7 +5,6 @@
   font-size: larger;
   font-size-adjust: inherit;
   border: none;
-
 }
 
 main {
@@ -14,17 +13,37 @@ main {
   object-fit: cover;
 }
 
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
 .user-background {
+   display: flex;
+   background: saddlebrown center center/100%;
+   height: 100vh;
+   object-fit: cover;
+   opacity: .85;
+   align-items: center;
+   justify-content: center;
+   background-image: url('/Images/Backgrounds/1118086.jpg');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+
+ }
+
+.library-background {
   display: flex;
   background: saddlebrown center center/100%;
-  height: 100vh;
+  /*height: 100vh;*/
   object-fit: cover;
   opacity: .85;
   align-items: center;
   justify-content: center;
-  background-image: url('/Images/Backgrounds/1118086.jpg') ;
+  background-image: url('/Images/Backgrounds/1118086.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
+
 }
 
 .user-content {
@@ -32,13 +51,14 @@ main {
   flex-direction: column;
   text-align: center;
   width: 65%;
-  height: 65%;
+  height: 100%;
   background: rgba(255,255,255, .25);
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.4);
   padding: 35px;
   font-family: 'Luckiest Guy';
   font-size: larger;
   font-size-adjust: inherit;
+
 }
 
 .page-content {
@@ -46,22 +66,28 @@ main {
   flex-direction: column;
   text-align: center;
   width: 65%;
-  height: 65%;
+  height: 100%;
   background: rgba(255,255,255, .25);
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.4);
   padding: 35px;
   font-family: 'Luckiest Guy';
   font-size: medium;
 
-
 }
 
 .profile-photo {
   padding-bottom: 25px;
+  padding-top: 10%
 }
 
-/*.icon {*/
-  /*display: flex;*/
-  /*flex-direction: column-reverse;*/
-  /*align-items: center;*/
-/*}*/
+.icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding-top: 25px;
+ }
+
+.icon-1 {
+  padding-right: 200px;
+}

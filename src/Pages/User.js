@@ -17,7 +17,7 @@ class User extends Component {
     return (
       <article className="user-background">
         <section className="user-content">
-          <div >
+          <div>
             <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAJIAAAAJDRmMjdkMDZhLTc2ZGUtNGQyMS1hYzhjLTRkY2ZkOGMzOGI1ZA.jpg"
               className="profile-photo"
               alt="Edit photo"
@@ -25,12 +25,14 @@ class User extends Component {
               width="200" />
             <h2>Hello London!</h2>
           </div>
-          <a href="/Character" className="icon">
-            <i className="material-icons">face</i>
-          </a>
-          <a href="/Library" className="icon">
-            <i className="material-icons">movie</i>
-          </a>
+          <section className="icon">
+            <a href="/Character" className="icon-1">
+              <i className="material-icons">face</i>
+            </a>
+            <a href="/Library" className="icon-2">
+              <i className="material-icons">movie</i>
+            </a>
+          </section>
         </section>
       </article>
     );
