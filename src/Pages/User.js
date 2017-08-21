@@ -1,39 +1,39 @@
 import React, { Component } from 'react';
 import '../App.css';
-import '../index.css';
-
-// const styles = {
-//   pageBackground: {
-//     background: `saddlebrown url('/Images/Backgrounds/1118086.jpg') no-repeat top center/100%`,
-//     minHeight: '400px',
-//     height: '100vh'
-//     // width: '100vw'
-//   }
-// };
+import './User.css';
 
 class User extends Component {
 
   render() {
     return (
       <article className="user-background">
+        <header className="game-title">
+          <h3>Choose-Your-Own-Adventure Movie</h3>
+        </header>
         <section className="user-content">
-          <div>
-            <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAJIAAAAJDRmMjdkMDZhLTc2ZGUtNGQyMS1hYzhjLTRkY2ZkOGMzOGI1ZA.jpg"
+          <div className="content">
+            <img
+              // srcSet="./Images/ProfilePic/LondonProfilePic.png 1x,
+              //         ./Images/ProfilePic/LondonProfilePic.png 1.5x,
+              //         ./Images/ProfilePic/LondonProfilePic.png 2.5x"
+              // sizes="(max-width: 320px) 200px,
+              //        (max-width: 480px) 440px, 800px"
+              src="./Images/ProfilePic/LondonProfilePic.png"
               className="profile-photo"
               alt="Edit photo"
-              height="200"
-              width="200" />
-            <h2>Hello London!</h2>
+            />
+            <h2 className="greeting">Hello London!</h2>
           </div>
-          <section className="icon">
-            <a href="/Character" className="icon-1">
-              <i className="material-icons">face</i>
+          <div className="icon">
+            <a href="/Character">
+              <img className="icon-1" src="/Images/Icons/mickey_mouse.png" />
             </a>
-            <a href="/Library" className="icon-2">
-              <i className="material-icons">movie</i>
+            <a href="/Library">
+              <img className="icon-3" src="/Images/Icons/movie_library.png" />
             </a>
-          </section>
+          </div>
         </section>
+        <div className="transparent-footer"></div>
       </article>
     );
   }

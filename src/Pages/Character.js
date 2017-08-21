@@ -9,7 +9,7 @@ class Character extends Component {
           <h2>Hello London!</h2>
           <h3>Pick your character to start a new movie.</h3>
           <a href="/Theme">
-            <i className="material-icons">music_note</i>
+            <img className="icon-2" src="/Images/Icons/429-double-arrows-right.png" />
           </a>
         </section>
       </article>

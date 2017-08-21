@@ -5,7 +5,7 @@ class Login extends Component {
   render() {
     return (
       <article className="user-background">
-        <section className="user-content">
+        <section className="page-content">
 
         </section>
       </article>

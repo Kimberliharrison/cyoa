@@ -6,15 +6,13 @@ class Theme extends Component {
     return (
       <article className="user-background">
         <section className="page-content">
-          <div>
             <div>
               <h2>Hello London!</h2>
               <h3>Pick your story and music.</h3>
               <a href="/Storyend">
-                <i className="material-icons">videocam</i>
+                <img className="icon-2" src="/Images/Icons/429-double-arrows-right.png" />
               </a>
             </div>
-          </div>
         </section>
       </article>
     );
