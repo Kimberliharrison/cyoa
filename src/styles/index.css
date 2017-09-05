@@ -1,0 +1,489 @@
+/* main pages */
+.User .user-background {
+  display: flex;
+  background: url("/Images/Backgrounds/1118086.jpg") center center/100% no-repeat fixed;
+  height: 100vh !important;
+  object-fit: cover;
+  opacity: .85;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  overflow: hidden;
+  flex-direction: column;
+  font-family: 'little_trouble_girl_bvregular';
+  /*font-size: small;*/
+  text-wrap: normal;
+  text-align: start; }
+.User .transparent-footer,
+.User .game-title {
+  width: 100vw;
+  height: 15%;
+  flex-grow: 1;
+  min-height: 75px; }
+.User .transparent-footer {
+  height: 10%;
+  min-height: 75px; }
+.User .game-title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-content: center; }
+.User .game-title h3 {
+  font-size: 72px;
+  color: black;
+  font-weight: bold;
+  justify-content: center;
+  position: relative;
+  top: 30%; }
+.User .user-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+  height: 65%;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.4);
+  border: none;
+  font-family: 'little_trouble_girl_bvregular';
+  color: black;
+  font-size: medium;
+  font-size-adjust: inherit;
+  flex-grow: 4; }
+.User .content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  border: none;
+  font-family: 'little_trouble_girl_bvregular';
+  color: black;
+  font-size: large;
+  font-size-adjust: inherit; }
+.User .profile-photo {
+  display: flex;
+  /*padding-bottom: 5vh;*/
+  /*padding-top: 5vh;*/
+  height: 25vh;
+  width: auto;
+  border: black;
+  justify-content: center;
+  /*align-content: center;*/ }
+.User .greeting {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 2%;
+  width: 100%;
+  justify-content: center; }
+.User .icon {
+  /*display: flex;*/
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+  width: auto;
+  height: 20%;
+  background: gray, .25;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.4);
+  border: none; }
+.User .icon-1 {
+  /*display: flex;*/
+  /*padding-right: 10%;*/
+  height: 50%;
+  width: auto; }
+.User .icon-3 {
+  /*display: flex;*/
+  height: 50%;
+  width: auto; }
+
+.Character .character-background {
+  display: flex;
+  background: url("/Images/Backgrounds/1118086.jpg") center center/100% no-repeat fixed;
+  height: 100vh !important;
+  object-fit: cover;
+  opacity: .85;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  overflow: hidden;
+  flex-direction: column;
+  font-family: 'little_trouble_girl_bvregular';
+  /*font-size: small;*/
+  text-wrap: normal;
+  text-align: start; }
+.Character .character-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 65%;
+  height: 75%;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.4);
+  border: none;
+  font-family: 'little_trouble_girl_bvregular';
+  color: black;
+  overflow: scroll; }
+.Character .icon-2 {
+  /*display: flex;*/
+  height: 100px; }
+
+.Library {
+  /* movie player */ }
+  .Library .library-background {
+    display: flex;
+    background: url("/Images/Backgrounds/1118086.jpg") center center/100% no-repeat fixed;
+    object-fit: cover;
+    height: 100vh;
+    opacity: .85;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    overflow: hidden; }
+  .Library .page-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 65%;
+    height: 75%;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.4);
+    border: none;
+    font-family: 'little_trouble_girl_bvregular';
+    color: black;
+    overflow: scroll; }
+  .Library ::-webkit-scrollbar {
+    display: none; }
+  .Library .icon-photo {
+    height: 35%;
+    /*padding-top: 1%;*/ }
+  .Library .page-content div {
+    width: 100%;
+    height: 25%;
+    /*flex-grow: 1;*/ }
+  .Library .page-content h1 {
+    margin: 1%;
+    font-size: 5vh; }
+  .Library .page-content h2 {
+    margin: 1%;
+    font-size: 3vh; }
+  .Library .movies iframe {
+    border: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: calc(100% - 20px);
+    height: calc((50vw - 20px) * 0.5625);
+    /*16:9 aspect ratio*/
+    margin-top: 2%; }
+  .Library .controls {
+    visibility: hidden;
+    opacity: 0.5;
+    width: 400px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -200px;
+    background-color: black;
+    box-shadow: 3px 3px 5px black;
+    transition: 1s all;
+    display: flex; }
+  .Library .player:hover .controls, .Library player:focus .controls {
+    opacity: 1; }
+  .Library button:before {
+    font-family: HeydingsControlsRegular;
+    font-size: 20px;
+    position: relative;
+    content: attr(data-icon);
+    color: #aaa;
+    text-shadow: 1px 1px 0px black; }
+  .Library .timer {
+    line-height: 38px;
+    font-size: 10px;
+    font-family: monospace;
+    text-shadow: 1px 1px 0px black;
+    color: white;
+    flex: 5;
+    position: relative; }
+  .Library .timer div {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.2);
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 38px;
+    z-index: 2; }
+  .Library .timer span {
+    position: absolute;
+    z-index: 3;
+    left: 19px; }
+
+/* story board pages */
+.oneOne .user-background {
+  display: flex;
+  background: url("/Images/Backgrounds/1118086.jpg") center center/100% no-repeat fixed;
+  height: 100vh !important;
+  object-fit: cover;
+  background-size: cover;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center; }
+.oneOne .sprite-layout {
+  display: flex;
+  width: 90vw;
+  height: 90vh;
+  align-items: baseline;
+  justify-content: space-evenly; }
+.oneOne #sprite {
+  height: 175px;
+  width: 200px;
+  align-self: flex-end; }
+.oneOne .slideIn {
+  animation-name: slideIn;
+  -webkit-animation-name: slideIn;
+  animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  visibility: visible !important; }
+@keyframes slideIn {
+  0% {
+    transform: translateX(-300%); }
+  100% {
+    transform: translateX(0%); } }
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: translateX(-300%); }
+  100% {
+    -webkit-transform: translateX(0%); } }
+.oneOne #fairy {
+  height: 500px;
+  width: 333px;
+  align-self: center;
+  animation: nudge 5s linear alternate infinite; }
+.oneOne .slideInRight {
+  animation-name: slideInRight;
+  -webkit-animation-name: slideinRight;
+  animation-duration: 5s;
+  -webkit-animation-duration: 5s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  visibility: visible !important; }
+@keyframes slideInRight {
+  0% {
+    transform: translateX(300%); }
+  100% {
+    transform: translateX(0%); } }
+@-webkit-keyframes slideInRight {
+  0% {
+    transform: translateX(300%); }
+  100% {
+    transform: translateX(0%); } }
+@keyframes fairy-nudge {
+  0% {
+    transform: translate(0, 20px); }
+  20% {
+    transform: translate(25px, 0); }
+  40% {
+    transform: translate(0, 25px); }
+  60% {
+    transform: translate(35px, 0); }
+  80% {
+    transform: translate(0, 30px); }
+  100% {
+    transform: translate(35px, 0); } }
+.oneOne .links {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: stretch; }
+.oneOne .link1 {
+  height: 50px;
+  width: 50px; }
+.oneOne .link2 {
+  height: 50px;
+  width: 50px; }
+
+.twoOne .user-background {
+  display: flex;
+  background: url("/Images/Backgrounds/1118007.png") center center/100% no-repeat fixed;
+  height: 100vh !important;
+  object-fit: cover;
+  background-size: cover;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center; }
+.twoOne .sprite-layout {
+  display: flex;
+  width: 90vw;
+  height: 90vh;
+  align-items: baseline;
+  justify-content: space-evenly; }
+.twoOne #sprite {
+  height: 175px;
+  width: 200px;
+  align-self: flex-end; }
+.twoOne .slideIn {
+  animation-name: slideIn;
+  -webkit-animation-name: slideIn;
+  animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  visibility: visible !important; }
+@keyframes slideIn {
+  0% {
+    transform: translateX(-300%); }
+  100% {
+    transform: translateX(0%); } }
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: translateX(-300%); }
+  100% {
+    -webkit-transform: translateX(0%); } }
+.twoOne #alien {
+  height: 350px;
+  width: 300px;
+  align-self: flex-start;
+  animation: nudge 5s linear alternate infinite; }
+.twoOne .slideInRight {
+  animation-name: slideInRight;
+  -webkit-animation-name: slideinRight;
+  animation-duration: 5s;
+  -webkit-animation-duration: 5s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  visibility: visible !important; }
+@keyframes slideInRight {
+  0% {
+    transform: translateX(300%); }
+  100% {
+    transform: translateX(0%); } }
+@-webkit-keyframes slideInRight {
+  0% {
+    transform: translateX(300%); }
+  100% {
+    transform: translateX(0%); } }
+@keyframes nudge {
+  0% {
+    transform: translate(0, 20px); }
+  20% {
+    transform: translate(25px, 0); }
+  40% {
+    transform: translate(0, 25px); }
+  60% {
+    transform: translate(35px, 0); }
+  80% {
+    transform: translate(0, 30px); }
+  100% {
+    transform: translate(35px, 0); } }
+.twoOne .links {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: stretch; }
+.twoOne .link1 {
+  height: 50px;
+  width: 50px; }
+.twoOne .link2 {
+  height: 50px;
+  width: 50px; }
+
+.twoTwo .user-background {
+  display: flex;
+  background: url("/Images/Backgrounds/1118007.png") center center/100% no-repeat fixed;
+  height: 100vh !important;
+  object-fit: cover;
+  background-size: cover;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center; }
+.twoTwo .sprite-layout {
+  display: flex;
+  width: 90vw;
+  height: 90vh;
+  align-items: baseline;
+  justify-content: space-evenly; }
+.twoTwo #sprite {
+  height: 175px;
+  width: 200px;
+  align-self: flex-end; }
+.twoTwo .slideIn {
+  animation-name: slideIn;
+  -webkit-animation-name: slideIn;
+  animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  visibility: visible !important; }
+@keyframes slideIn {
+  0% {
+    transform: translateX(-300%); }
+  100% {
+    transform: translateX(0%); } }
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: translateX(-300%); }
+  100% {
+    -webkit-transform: translateX(0%); } }
+.twoTwo #two-two {
+  height: 400px;
+  width: 700px;
+  align-self: flex-end;
+  animation: nudge 8s linear alternate infinite; }
+@keyframes two-two-nudge {
+  0% {
+    transform: translate(5px, 0); }
+  5% {
+    transform: translate(0, 0); }
+  10% {
+    transform: translate(5px, 0); }
+  15% {
+    transform: translate(0, 0); }
+  20% {
+    transform: translate(5px, 0); }
+  25% {
+    transform: translate(0, 0); }
+  30% {
+    transform: translate(5px, 0); }
+  35% {
+    transform: translate(0, 0); }
+  40% {
+    transform: translate(5px, 0); }
+  45% {
+    transform: translate(0, 0); }
+  50% {
+    transform: translate(5px, 0); }
+  60% {
+    transform: translate(0, 0); }
+  70% {
+    transform: translate(0, 0); }
+  80% {
+    transform: translate(0, 0); }
+  90% {
+    transform: translate(0, 0); }
+  100% {
+    transform: translate(0, 0); } }
+.twoTwo .links {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: stretch; }
+.twoTwo .link1 {
+  height: 50px;
+  width: 50px; }
+.twoTwo .link2 {
+  height: 50px;
+  width: 50px; }
+
+/*# sourceMappingURL=index.css.map */

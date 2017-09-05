@@ -4,11 +4,13 @@ class Login extends Component {
 
   render() {
     return (
-      <article className="user-background">
-        <section className="page-content">
+      <div className="Login">
+        <article className="user-background">
+          <section className="page-content">
 
-        </section>
-      </article>
+          </section>
+        </article>
+      </div>
     );
   }
 }

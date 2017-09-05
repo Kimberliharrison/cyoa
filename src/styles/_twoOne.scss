@@ -1,0 +1,36 @@
+.user-background2 {
+  display: flex;
+  background: url('/Images/Backgrounds/1118007.png') center center/100% no-repeat fixed;
+  height: 100vh !important;
+  object-fit: cover;
+  background-size: cover;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.sprite-layout {
+  display: flex;
+  width: 90vw;
+  height: 90vh;
+  align-items: baseline;
+  justify-content: space-evenly;
+
+}
+
+
+#alien {
+  height: 400px;
+  width: 400px;
+  visibility: hidden;
+  align-self: flex-start;
+  animation:
+    nudge 5s linear alternate infinite;
+}
+
+
+.dino {
+  height: 50px;
+  width: 75px;
+}

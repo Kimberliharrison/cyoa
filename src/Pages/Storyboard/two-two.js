@@ -1,28 +1,28 @@
 import React, { Component } from 'react';
 
-class twoOne extends Component {
+class twoTwo extends Component {
 
   render() {
 
     let myArray = ['two-one', 'two-two', 'two-three', 'two-four', 'two-five'];
     let random1 = myArray[Math.floor(Math.random() * myArray.length)];
 
-    let myArray2 = myArray.splice(random1, 1);
+    let myArray2 = myArray.splice(random1);
     let random2 = myArray2[Math.floor(Math.random() * myArray2.length)];
 
     document.links.innerHTML = random1;
     document.links.innerHTML = random2;
 
     return (
-      <div className="twoOne">
+      <div className="twoTwo">
         <article className="user-background">
           <section className="sprite-layout">
             <img src="../sprites/cat/Walk (1).png"
               id="sprite"
               className="slideIn"
             />
-            <img src="../sprites/antagonists/two-one.png"
-              id="alien"
+            <img src="../sprites/antagonists/two-two.png"
+              id="two-two"
               className="slideInRight"
               // onTouchTap={}
             />
@@ -42,4 +42,4 @@ class twoOne extends Component {
 }
 
 
-export default twoOne;
+export default twoTwo;

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class twoOne extends Component {
+class twoFour extends Component {
 
   render() {
 
@@ -42,4 +42,4 @@ class twoOne extends Component {
 }
 
 
-export default twoOne;
+export default twoFour;

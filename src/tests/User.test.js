@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import User from './User';
+import User from '../Pages/User';
 
 test(`User component renders London`, () => {
   const wrapper = shallow(

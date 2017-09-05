@@ -8,7 +8,12 @@ import Library from './Pages/Library';
 import Storyend from './Pages/Storyend';
 import Theme from './Pages/Theme';
 import User from './Pages/User';
-import OneOne from './Pages/Storyboard/one-one'
+import OneOne from './Pages/Storyboard/one-one';
+import TwoOne from './Pages/Storyboard/two-one';
+import TwoTwo from './Pages/Storyboard/two-two';
+import TwoThree from './Pages/Storyboard/two-three';
+import TwoFour from './Pages/Storyboard/two-four';
+import TwoFive from './Pages/Storyboard/two-five';
 
 export default () => {
   return (
@@ -22,6 +27,14 @@ export default () => {
         <Route path="/User" exact component={User} />
         <Route path="/User" exact component={User} />
         <Route path="/one-one" exact component={OneOne} />
+        <Route path="/two-one" exact component={TwoOne} />
+        <Route path="/two-two" exact component={TwoTwo} />
+        <Route path="/two-three" exact component={TwoThree} />
+        <Route path="/two-four" exact component={TwoFour} />
+        <Route path="/two-five" exact component={TwoFive} />
+
+        <Redirect from=" " to="/" />
+
 
         {/*<Redirect from="/figures" to="/" />*/}
       </Switch>
