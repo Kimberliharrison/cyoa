@@ -5812,6 +5812,10 @@ react-game-kit@0.0.2:
   dependencies:
     matter-js "^0.10.0"
 
+react-localstorage@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/react-localstorage/-/react-localstorage-0.3.1.tgz#73b1d0622863eaff780a27f27004a3c0684d403b"
+
 react-overlays@^0.6.12:
   version "0.6.12"
   resolved "https://registry.yarnpkg.com/react-overlays/-/react-overlays-0.6.12.tgz#a079c750cc429d7db4c7474a95b4b54033e255c3"
@@ -5925,6 +5929,10 @@ react@^15.4.2, react@^15.6.1:
     loose-envify "^1.1.0"
     object-assign "^4.1.0"
     prop-types "^15.5.10"
+
+reactjs-localstorage@0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/reactjs-localstorage/-/reactjs-localstorage-0.0.5.tgz#a290e1949c2c4a61ec7f1f5ff4c8b8e95c0e6735"
 
 read-all-stream@^3.0.0:
   version "3.1.0"
