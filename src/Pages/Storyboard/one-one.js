@@ -1,38 +1,28 @@
 import React, { Component } from 'react';
-import {reactLocalStorage} from 'reactjs-localstorage';
+import { storage } from '../../configuration';
 
 const myArray = ['two-one', 'two-two', 'two-three', 'two-four', 'two-five'];
 
-reactLocalStorage.set('var', true);
-reactLocalStorage.get('var', true);
-reactLocalStorage.setObject('var', {'test': 'test'});
-reactLocalStorage.getObject('var');
-
-// setter
-localStorage.setItem('myArray', JSON.stringify(myArray));
-
-// getter
-const parsedArray = JSON.parse(localStorage.getItem('myArray'));
-
 class oneOne extends Component {
-
-  constructor(props) {
-    super(props);
-    this.state = { parsedArray };
-  }
-
 
   render() {
 
-    const random1 = parsedArray[Math.floor(Math.random() * parsedArray.length)];
-    document.links.innerHTML = random1;
+    const random1 = myArray[Math.floor(Math.random() * myArray.length)];
+    storage.save('random1', random1);
+    console.log(random1);
 
-    let parsedArray2 = [...parsedArray].filter(
-      function (parsedArray, random1) {
-        return parsedArray - random1;
-      }, 0);
-    const random2 = parsedArray2[Math.floor(Math.random() * parsedArray2.length)];
-    document.links.innerHTML = random2;
+    storage.get(random1);
+    let parsedArray = myArray.filter(
+      function(myArray){
+        return [...myArray - random1];
+      })
+    ;
+    storage.save('parsedArray', parsedArray);
+
+    storage.get('parsedArray');
+    const random2 = parsedArray[Math.floor(Math.random() * parsedArray.length)];
+    console.log(random2);
+    storage.save('random2');
 
     return (
       <div className="oneOne">

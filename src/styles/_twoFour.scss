@@ -1,0 +1,142 @@
+.twoFour {
+  .twoOne {
+
+    .user-background {
+      display: flex;
+      background: url('/Images/Backgrounds/1118007.png') center center/100% no-repeat fixed;
+      height: 100vh !important;
+      object-fit: cover;
+      background-size: cover;
+      overflow: hidden;
+      align-items: center;
+      justify-content: center;
+
+    }
+    .sprite-layout {
+      display: flex;
+      width: 90vw;
+      height: 90vh;
+      align-items: baseline;
+      justify-content: space-evenly;
+
+    }
+
+    #sprite {
+      height: 175px;
+      width: 200px;
+      align-self: flex-end;
+    }
+
+    .slideIn {
+      animation-name: slideIn;
+      -webkit-animation-name: slideIn;
+
+      animation-duration: 3s;
+      -webkit-animation-duration: 3s;
+
+      animation-timing-function: ease;
+      -webkit-animation-timing-function: ease;
+
+      visibility: visible !important;
+    }
+
+    @keyframes slideIn {
+      0% {
+        transform: translateX(-300%);
+      }
+      100% {
+        transform: translateX(0%);
+      }
+    }
+
+    @-webkit-keyframes slideIn {
+      0% {
+        -webkit-transform: translateX(-300%);
+      }
+      100% {
+        -webkit-transform: translateX(0%);
+      }
+    }
+
+    #alien {
+      height: 350px;
+      width: 300px;
+      align-self: flex-start;
+      animation: nudge 5s linear alternate infinite;
+    }
+
+    .slideInRight {
+      animation-name: slideInRight;
+      -webkit-animation-name: slideinRight;
+
+      animation-duration: 5s;
+      -webkit-animation-duration: 5s;
+
+      animation-timing-function: ease;
+      -webkit-animation-timing-function: ease;
+
+      visibility: visible !important;
+    }
+
+    @keyframes slideInRight {
+      0% {
+        transform: translateX(300%);
+      }
+      100% {
+        transform: translateX(0%);
+      }
+    }
+
+    @-webkit-keyframes slideInRight {
+      0% {
+        transform: translateX(300%);
+      }
+      100% {
+        transform: translateX(0%);
+      }
+    }
+
+    @keyframes nudge {
+      0% {
+        transform: translate(0, 20px);
+      }
+      20% {
+        transform: translate(25px, 0);
+      }
+      40% {
+        transform: translate(0, 25px);
+      }
+      60% {
+        transform: translate(35px, 0);
+      }
+      80% {
+        transform: translate(0, 30px);
+      }
+      100% {
+        transform: translate(35px, 0);
+      }
+    }
+
+    .links {
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: stretch;
+
+    }
+
+    .link1 {
+      height: 50px;
+      width: 50px;
+    }
+
+    .link2 {
+      height: 50px;
+      width: 50px;
+    }
+
+  }
+
+
+}
