@@ -7,7 +7,6 @@ import {SubscriptionClient, addGraphQLSubscriptions} from 'subscriptions-transpo
 
 import App from './App';
 import './styles/index.css';
-import 'bootstrap/dist/css/bootstrap.css';
 
 // Create WebSocket client
 const wsClient = new SubscriptionClient(`wss://subscriptions.graph.cool/v1/cj5vepfbv4ndd0122laj4sgu1`, {

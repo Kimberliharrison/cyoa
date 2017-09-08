@@ -3,15 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "animate-html5prite": "^1.0.2",
-    "animation-frame": "^0.3.0",
-    "auth0-js": "^8.9.3",
     "babel-preset-react": "^6.24.1",
-    "bootstrap": "^4.0.0-beta",
-    "bootstrap-loader": "^2.2.0",
     "imports-loader": "^0.7.1",
+    "jest-cli": "^21.0.2",
     "jquery": "^3.2.1",
     "jwt-decode": "^2.2.0",
+    "mocha": "^3.5.0",
     "nightwatch": "^0.9.16",
     "popper.js": "^1.12.5",
     "react": "^15.6.1",
@@ -28,8 +25,8 @@
     "reactjs-localstorage": "0.0.5",
     "resolve-url-loader": "^2.1.0",
     "rest": "^2.0.0",
-    "selenium": "^2.20.0",
-    "subscriptions-transport-ws": "^0.8.2"
+    "subscriptions-transport-ws": "^0.8.2",
+    "webdev-setup-tools-java": "^2.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -46,6 +43,7 @@
     "enzyme": "^2.9.1",
     "file-loader": "^0.11.2",
     "jest": "^20.0.4",
+    "jest-enzyme": "^3.8.2",
     "node-sass": "^4.5.3",
     "react-test-renderer": "^15.6.1",
     "sass-loader": "^6.0.6",
