@@ -1,21 +1,35 @@
 import React, { Component } from 'react';
 import Routing from './Routing';
-import { storage } from './configuration'
+import gql from 'graphql-tag';
+import { graphql } from 'react-apollo';
 
+const createCharacter = gql`
+    mutation addCharacter($character: String!, $imageUrl: String!) {
+        createCharacter(chooseCharacter: $character, imageUrl: $imageUrl) {
+            id
+            chooseCharacter
+            imageUrl
+        }
+    }
+`;
 
 class App extends Component {
-  render() {
 
-    // storage.save('blah', { message: 'hello'})
-    // const value = storage.get('blah')
-    // console.log(value)
+  render() {
+    this.props.mutate({
+      mutation: createCharacter,
+      variables: {
+        character: "dog",
+        imageUrl: "../sprites/dog/Walk (1).png"
+      }
+    });
 
     return (
       <main>
         <Routing />
       </main>
     );
-  }
+  };
 }
 
-export default App;
+export default graphql(createCharacter)(App);

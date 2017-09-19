@@ -4,7 +4,7 @@ class Theme extends Component {
 
   render() {
     return (
-      <div className="Character">
+      <div className="Theme">
         <article className="user-background">
           <section className="page-content">
             <div>

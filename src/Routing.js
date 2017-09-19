@@ -25,16 +25,13 @@ export default () => {
         <Route path="/Storyend" exact component={Storyend} />
         <Route path="/Theme" exact component={Theme} />
         <Route path="/User" exact component={User} />
-        <Route path="/User" exact component={User} />
         <Route path="/one-one" exact component={OneOne} />
         <Route path="/two-one" exact component={TwoOne} />
         <Route path="/two-two" exact component={TwoTwo} />
         <Route path="/two-three" exact component={TwoThree} />
         <Route path="/two-four" exact component={TwoFour} />
         <Route path="/two-five" exact component={TwoFive} />
-
         <Redirect from=" " to="/" />
-
 
         {/*<Redirect from="/figures" to="/" />*/}
       </Switch>

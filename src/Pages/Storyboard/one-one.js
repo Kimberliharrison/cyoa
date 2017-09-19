@@ -1,28 +1,44 @@
 import React, { Component } from 'react';
-import { storage } from '../../configuration';
+// import Filter from 'Filter';
+import gql from 'graphql-tag';
+import { graphql } from 'react-apollo';
 
 const myArray = ['two-one', 'two-two', 'two-three', 'two-four', 'two-five'];
+
+const allCharacters = gql`
+    query allCharacters($character: String!) {
+        allCharacters(filter: { chooseCharacter: $character }) {
+            id
+            chooseCharacter
+            imageUrl
+        }
+    }
+`;
 
 class oneOne extends Component {
 
   render() {
 
+    this.props.query({
+      query: allCharacters,
+      variables: {
+        character: 'cat',
+        imageUrl: '../sprites/cat/Walk (1).png'
+      }
+    });
+
     const random1 = myArray[Math.floor(Math.random() * myArray.length)];
-    storage.save('random1', random1);
     console.log(random1);
 
-    storage.get(random1);
     let parsedArray = myArray.filter(
-      function(myArray){
-        return [...myArray - random1];
+      function (dec) {
+        return dec !== random1;
       })
     ;
-    storage.save('parsedArray', parsedArray);
+    console.log(parsedArray);
 
-    storage.get('parsedArray');
     const random2 = parsedArray[Math.floor(Math.random() * parsedArray.length)];
     console.log(random2);
-    storage.save('random2');
 
     return (
       <div className="oneOne">
@@ -52,4 +68,4 @@ class oneOne extends Component {
   }
 }
 
-export default oneOne;
+export default graphql(allCharacters)(oneOne);

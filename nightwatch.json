@@ -1,6 +1,6 @@
 
 {
-  "src_folders" : ["test/e2e"],
+  "src_folders" : ["src/test/e2e"],
   "test_runner" : {
     "type" : "mocha",
     "options" : {

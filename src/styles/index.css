@@ -10,7 +10,6 @@
   background-size: cover;
   overflow: hidden;
   flex-direction: column;
-  font-family: 'little_trouble_girl_bvregular';
   /*font-size: small;*/
   text-wrap: normal;
   text-align: start; }
@@ -27,7 +26,8 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  align-content: center; }
+  align-content: center;
+  font-family: 'little_trouble_girl_bvregular'; }
 .User .game-title h3 {
   font-size: 72px;
   color: black;
@@ -140,7 +140,7 @@
     display: flex;
     background: url("/Images/Backgrounds/1118086.jpg") center center/100% no-repeat fixed;
     object-fit: cover;
-    height: 100vh;
+    height: 100vh !important;
     opacity: .85;
     align-items: center;
     justify-content: center;
@@ -225,11 +225,42 @@
     z-index: 3;
     left: 19px; }
 
+.Theme .user-background {
+  display: flex;
+  background: url("/Images/Backgrounds/1118086.jpg") center center/100% no-repeat fixed;
+  height: 100vh !important;
+  object-fit: cover;
+  opacity: .85;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  overflow: hidden;
+  flex-direction: column;
+  font-family: 'little_trouble_girl_bvregular';
+  /*font-size: small;*/
+  text-wrap: normal;
+  text-align: start; }
+.Theme .page-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 65%;
+  height: 75%;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.4);
+  border: none;
+  font-family: 'little_trouble_girl_bvregular';
+  color: black;
+  overflow: scroll; }
+.Theme .icon-2 {
+  /*display: flex;*/
+  height: 100px; }
+
 /* story board pages */
 .oneOne .user-background {
   display: flex;
   background: url("/Images/Backgrounds/1118086.jpg") center center/100% no-repeat fixed;
-  height: 100vh !important;
   object-fit: cover;
   background-size: cover;
   overflow: hidden;
